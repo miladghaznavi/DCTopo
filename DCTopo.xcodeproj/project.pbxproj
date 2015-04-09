@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		F3B5C63C1AD704D3003D4C0F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3B5C63B1AD704D3003D4C0F /* main.cpp */; };
+		F3C245281AD71BBA007D7AA6 /* basics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3C245201AD71BBA007D7AA6 /* basics.cpp */; };
+		F3C245291AD71BBA007D7AA6 /* graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3C245211AD71BBA007D7AA6 /* graph.cpp */; };
+		F3C2452A1AD71BBA007D7AA6 /* json_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3C245221AD71BBA007D7AA6 /* json_reader.cpp */; };
+		F3C2452B1AD71BBA007D7AA6 /* json_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3C245231AD71BBA007D7AA6 /* json_value.cpp */; };
+		F3C2452C1AD71BBA007D7AA6 /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3C245241AD71BBA007D7AA6 /* json_writer.cpp */; };
+		F3C2452D1AD71BBA007D7AA6 /* resource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3C245251AD71BBA007D7AA6 /* resource.cpp */; };
+		F3C2452E1AD71BBA007D7AA6 /* substrategraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3C245261AD71BBA007D7AA6 /* substrategraph.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +32,20 @@
 /* Begin PBXFileReference section */
 		F3B5C6381AD704D2003D4C0F /* DCTopo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DCTopo; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B5C63B1AD704D3003D4C0F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F3C2451A1AD71BBA007D7AA6 /* basics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basics.h; sourceTree = "<group>"; };
+		F3C2451B1AD71BBA007D7AA6 /* graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = graph.h; sourceTree = "<group>"; };
+		F3C2451C1AD71BBA007D7AA6 /* json_tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json_tool.h; sourceTree = "<group>"; };
+		F3C2451D1AD71BBA007D7AA6 /* resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resource.h; sourceTree = "<group>"; };
+		F3C2451E1AD71BBA007D7AA6 /* substrategraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = substrategraph.h; sourceTree = "<group>"; };
+		F3C2451F1AD71BBA007D7AA6 /* json_valueiterator.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_valueiterator.inl; sourceTree = "<group>"; };
+		F3C245201AD71BBA007D7AA6 /* basics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = basics.cpp; sourceTree = "<group>"; };
+		F3C245211AD71BBA007D7AA6 /* graph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = graph.cpp; sourceTree = "<group>"; };
+		F3C245221AD71BBA007D7AA6 /* json_reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_reader.cpp; sourceTree = "<group>"; };
+		F3C245231AD71BBA007D7AA6 /* json_value.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_value.cpp; sourceTree = "<group>"; };
+		F3C245241AD71BBA007D7AA6 /* json_writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_writer.cpp; sourceTree = "<group>"; };
+		F3C245251AD71BBA007D7AA6 /* resource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resource.cpp; sourceTree = "<group>"; };
+		F3C245261AD71BBA007D7AA6 /* substrategraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = substrategraph.cpp; sourceTree = "<group>"; };
+		F3C245271AD71BBA007D7AA6 /* json */ = {isa = PBXFileReference; lastKnownFileType = folder; path = json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +78,31 @@
 		F3B5C63A1AD704D2003D4C0F /* DCTopo */ = {
 			isa = PBXGroup;
 			children = (
+				F3C2452F1AD71BD2007D7AA6 /* json */,
+				F3C245271AD71BBA007D7AA6 /* json */,
+				F3C2451A1AD71BBA007D7AA6 /* basics.h */,
+				F3C2451B1AD71BBA007D7AA6 /* graph.h */,
+				F3C2451D1AD71BBA007D7AA6 /* resource.h */,
+				F3C2451E1AD71BBA007D7AA6 /* substrategraph.h */,
+				F3C245201AD71BBA007D7AA6 /* basics.cpp */,
+				F3C245211AD71BBA007D7AA6 /* graph.cpp */,
+				F3C245251AD71BBA007D7AA6 /* resource.cpp */,
+				F3C245261AD71BBA007D7AA6 /* substrategraph.cpp */,
 				F3B5C63B1AD704D3003D4C0F /* main.cpp */,
 			);
 			path = DCTopo;
+			sourceTree = "<group>";
+		};
+		F3C2452F1AD71BD2007D7AA6 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				F3C2451C1AD71BBA007D7AA6 /* json_tool.h */,
+				F3C2451F1AD71BBA007D7AA6 /* json_valueiterator.inl */,
+				F3C245221AD71BBA007D7AA6 /* json_reader.cpp */,
+				F3C245231AD71BBA007D7AA6 /* json_value.cpp */,
+				F3C245241AD71BBA007D7AA6 /* json_writer.cpp */,
+			);
+			name = json;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +161,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3C2452A1AD71BBA007D7AA6 /* json_reader.cpp in Sources */,
+				F3C2452D1AD71BBA007D7AA6 /* resource.cpp in Sources */,
+				F3C2452E1AD71BBA007D7AA6 /* substrategraph.cpp in Sources */,
+				F3C245291AD71BBA007D7AA6 /* graph.cpp in Sources */,
+				F3C2452B1AD71BBA007D7AA6 /* json_value.cpp in Sources */,
+				F3C245281AD71BBA007D7AA6 /* basics.cpp in Sources */,
+				F3C2452C1AD71BBA007D7AA6 /* json_writer.cpp in Sources */,
 				F3B5C63C1AD704D3003D4C0F /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +285,7 @@
 				F3B5C6411AD704D3003D4C0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
